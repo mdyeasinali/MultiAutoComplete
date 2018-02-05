@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="net.hitechwebdesign.multiautocomplete.MainActivity">
+
+    <net.hitechwebdesign.multiautocomplete.ContactsCompletionView
+        android:id="@+id/autocomplete_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:imeOptions="actionDone"
+        android:inputType="text|textNoSuggestions|textMultiLine"
+        android:nextFocusDown="@+id/editText"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/btn_get"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Input Data" />
+
+    <TextView
+        android:id="@+id/input_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>
